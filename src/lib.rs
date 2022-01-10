@@ -49,7 +49,7 @@ fn update(msg: Msg, model: &mut Model, _: &mut impl Orders<Msg>) {
 fn view(model: &Model) -> Node<Msg> {
     div![
         "This is a counter: ",
-        C!["counter"],
+        C!["counter bg-red-500"],
         button![model.counter, ev(Ev::Click, |_| Msg::Increment),],
     ]
 }
